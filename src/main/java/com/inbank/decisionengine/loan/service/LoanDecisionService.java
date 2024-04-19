@@ -1,5 +1,6 @@
 package com.inbank.decisionengine.loan.service;
 
+import com.inbank.decisionengine.loan.dto.LoanDecisionResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -19,5 +20,9 @@ public class LoanDecisionService {
         CREDIT_MODIFIERS.put("49002010976", 100); // segment 1
         CREDIT_MODIFIERS.put("49002010987", 300); // segment 2
         CREDIT_MODIFIERS.put("49002010998", 1000); // segment 3
+    }
+
+    public LoanDecisionResponse calculate(String personalCode, int loanAmount, int loanPeriod) {
+        return null;
     }
 }
