@@ -9,11 +9,11 @@ public class Loan {
     private int loanPeriod;
     private int creditModifier;
     private double creditScore;
-    private int approvedAmount;
+    private int approvedLoanAmount;
 
-    public Loan(String personalCode, int loanAmount, int loanPeriod){
+    public Loan(String personalCode, int approvedLoanAmount, int loanPeriod){
         this.personalCode = personalCode;
-        this.loanAmount = loanAmount;
+        this.approvedLoanAmount = approvedLoanAmount;
         this.loanPeriod = loanPeriod;
     }
 }
